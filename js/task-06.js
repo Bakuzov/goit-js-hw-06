@@ -1,5 +1,5 @@
 const input = document.querySelector("#validation-input");
-console.dir(Number(input.dataset.length));
+// console.dir(Number(input.dataset.length));
 const hadlerBlur = (event) => {
   console.log(event.target.value.length);
   if (event.target.value.length === Number(input.dataset.length)) {
