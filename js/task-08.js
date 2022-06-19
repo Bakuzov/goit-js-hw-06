@@ -3,10 +3,8 @@ form.addEventListener("submit", onFormSubmit);
 
 function onFormSubmit(event) {
   event.preventDefault();
-  //   console.dir(event.currentTarget.elements);
-  const {
-    elements: { email, password },
-  } = event.currentTarget;
+  console.dir(event.currentTarget);
+  const { email, password } = event.currentTarget;
 
   if (email.value === "" || password.value === "") {
     return alert("Все поля должны быть заполнены");
@@ -24,9 +22,11 @@ function onFormSubmit(event) {
   //   alert("Все поля должны быть заполнены");
   // }
   // let labelEmail = form.firstElementChild.outerText;
-  // console.log(labelEmail);
+  // // console.log(labelEmail);
   // let labelPassword = form.firstElementChild.nextElementSibling.outerText;
-  // console.log(labelPassword);
+  // // console.log(labelPassword);
+  // //  const e = event.currentTarget.children[0].textContent;
+  // //   console.dir(event.currentTarget.children[0]);
   // const obj = {
   //   [labelEmail]: mail,
   //   password: pass,
