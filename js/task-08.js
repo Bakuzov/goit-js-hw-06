@@ -18,19 +18,20 @@ function onFormSubmit(event) {
   console.log(obj);
 
   // const formElements = event.currentTarget.elements;
-  //   const mail = formElements.email.value;
-  //   const pass = formElements.password.value;
-  //   if (mail === "" || pass === "") {
-  //     alert("Все поля должны быть заполнены");
-  //   }
-  //   let labelEmail = form.firstElementChild.outerText;
-  //   let labelPassword = form.firstElementChild.nextElementSibling.outerText;
-  //   console.log(labelEmail);
-  //   const obj = {
-  //     labelEmail: mail,
-  //     [labelPassword]: pass,
-  //   };
-  //   console.log(obj);
+  // const mail = formElements.email.value;
+  // const pass = formElements.password.value;
+  // if (mail === "" || pass === "") {
+  //   alert("Все поля должны быть заполнены");
+  // }
+  // let labelEmail = form.firstElementChild.outerText;
+  // console.log(labelEmail);
+  // let labelPassword = form.firstElementChild.nextElementSibling.outerText;
+  // console.log(labelPassword);
+  // const obj = {
+  //   [labelEmail]: mail,
+  //   password: pass,
+  // };
+  // console.log(obj);
 
   event.currentTarget.reset();
 }
